@@ -1,0 +1,154 @@
+{
+  "buses": {
+    "1": { "id": 1, "number": "6A", "capacity": 50, "langitude": 9.9251, "longitude": 78.5684 },
+    "2": { "id": 2, "number": "2B", "capacity": 40, "langitude": 9.9251, "longitude": 78.5684 },
+    "3": { "id": 3, "number": "4C", "capacity": 50, "langitude": 9.9251, "longitude": 78.5684 }
+  },
+  "routes": {
+    "1": {
+      "id": 1,
+      "name": "Ramanathapuram to Madurai",
+      "start": "Ramanathapuram",
+      "end": "Madurai",
+      "stops": {
+        "1": {
+          "id": 1,
+          "name": "Ramanathapuram",
+          "order": 1,
+          "departureTime": "08:00 AM",
+          "lat": 9.3716,
+          "lng": 78.8308
+        },
+        "2": {
+          "id": 2,
+          "name": "Paramakudi",
+          "order": 2,
+          "arrivalTime": "08:30 AM",
+          "departureTime": "08:35 AM",
+          "lat": 9.5442,
+          "lng": 78.5901
+        },
+        "3": {
+          "id": 3,
+          "name": "Manamadurai",
+          "order": 3,
+          "arrivalTime": "09:05 AM",
+          "departureTime": "09:10 AM",
+          "lat": 9.545,
+          "lng": 78.4766
+        },
+        "4": {
+          "id": 4,
+          "name": "Madurai",
+          "order": 4,
+          "arrivalTime": "10:00 AM",
+          "lat": 9.9252,
+          "lng": 78.1198
+        }
+      }
+    },
+    "2": {
+      "id": 2,
+      "name": "Madurai to Ramanathapuram",
+      "start": "Madurai",
+      "end": "Ramanathapuram",
+      "stops": {
+        "1": {
+          "id": 1,
+          "name": "Madurai",
+          "order": 1,
+          "departureTime": "02:00 PM",
+          "lat": 9.9252,
+          "lng": 78.1198
+        },
+        "2": {
+          "id": 2,
+          "name": "Manamadurai",
+          "order": 2,
+          "arrivalTime": "02:30 PM",
+          "departureTime": "02:35 PM",
+          "lat": 9.545,
+          "lng": 78.4766
+        },
+        "3": {
+          "id": 3,
+          "name": "Paramakudi",
+          "order": 3,
+          "arrivalTime": "03:05 PM",
+          "departureTime": "03:10 PM",
+          "lat": 9.5442,
+          "lng": 78.5901
+        },
+        "4": {
+          "id": 4,
+          "name": "Ramanathapuram",
+          "order": 4,
+          "arrivalTime": "04:00 PM",
+          "lat": 9.3716,
+          "lng": 78.8308
+        }
+      }
+    }
+  },
+  "schedules": {
+    "1": {
+      "id": 1,
+      "busId": 1,
+      "routeId": 1,
+      "date": "2025-03-25",
+      "status": "Running",
+      "departureTime": "08:00 AM",
+      "arrivalTime": "10:00 AM"
+    },
+    "2": {
+      "id": 2,
+      "busId": 2,
+      "routeId": 2,
+      "date": "2025-03-25",
+      "status": "Running",
+      "departureTime": "02:00 PM",
+      "arrivalTime": "04:00 PM"
+    },
+    "3": {
+      "id": 3,
+      "busId": 3,
+      "routeId": 1,
+      "date": "2025-03-25",
+      "status": "Running",
+      "departureTime": "09:00 AM",
+      "arrivalTime": "10:00 AM"
+    }
+  },
+  "places": {
+    "1": { "id": 1, "name": "Ramanathapuram" },
+    "2": { "id": 2, "name": "Paramakudi" },
+    "3": { "id": 3, "name": "Manamadurai" },
+    "4": { "id": 4, "name": "Madurai" }
+  },
+  "seatCount": {
+    "1": {
+      "id": 1,
+      "number": "6A",
+      "capacity": 50,
+      "seats": { "ramanathapuram": 0, "paramakudi": 0, "manamadurai": 0, "madurai": 0 },
+      "langitude": 9.9251,
+      "longitude": 78.5684
+    },
+    "2": {
+      "id": 2,
+      "number": "2B",
+      "capacity": 40,
+      "seats": { "ramanathapuram": 0, "paramakudi": 0, "manamadurai": 0, "madurai": 0 },
+      "langitude": 9.9251,
+      "longitude": 78.5684
+    },
+    "3": {
+      "id": 3,
+      "number": "4C",
+      "capacity": 50,
+      "langitude": 9.9251,
+      "longitude": 78.5684,
+      "seats": { "ramanathapuram": 0, "paramakudi": 0, "manamadurai": 0, "madurai": 0 }
+    }
+  }
+}

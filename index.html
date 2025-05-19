@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bus Ticket POS</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script> -->
+  </head>
+  <body>
+    <div class="pos-container">
+      <h2>6A</h2>
+
+      <label for="from">From:</label>
+      <select id="from">
+        <option value="Ramanathapuram">Ramanathapuram</option>
+        <option value="Paramakudi">Paramakudi</option>
+        <option value="Manamadurai">Manamadurai</option>
+        <option value="Madurai">Madurai</option>
+      </select>
+
+      <label for="to">To:</label>
+      <select id="to">
+        <option value="Ramanathapuram">Ramanathapuram</option>
+        <option value="Paramakudi">Paramakudi</option>
+        <option value="Manamadurai">Manamadurai</option>
+        <option value="Madurai">Madurai</option>
+      </select>
+
+      <div class="row-group">
+        <div>
+          <label for="adultQty">Adult Tickets:</label>
+          <input type="number" id="adultQty" min="0" value="0" />
+        </div>
+        <div>
+          <label for="adultGender">Adult Gender:</label>
+          <select id="adultGender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row-group">
+        <div>
+          <label for="childQty">Child Tickets:</label>
+          <input type="number" id="childQty" min="0" value="0" />
+        </div>
+        <div>
+          <label for="childGender">Child Gender:</label>
+          <select id="childGender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="total" id="totalDisplay">Total: ₹0.00</div>
+
+      <button onclick="printTicket()">Print Ticket</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
